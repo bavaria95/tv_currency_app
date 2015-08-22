@@ -1,6 +1,7 @@
 require 'sinatra'
 require 'open-uri'
 require 'nokogiri'
+require 'json'
 
 def get_currency url
 	doc = Nokogiri::HTML(open(url)).
@@ -15,10 +16,12 @@ get '/' do
 	"Hello world"
 end
 
-get '/usd' do 
-	get_currency(url_usd).to_s
+get '/usd' do
+	content_type :json 
+	get_currency(url_usd).to_json
 end
 
 get '/eur' do 
-	get_currency(url_eur).to_s
+	content_type :json 
+	get_currency(url_eur).to_json
 end
