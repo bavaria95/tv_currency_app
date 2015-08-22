@@ -2,8 +2,9 @@ require 'open-uri'
 require 'nokogiri'
 
 def get_currency url
-	Nokogiri::HTML(open(url)).
-				css("div[class='au-mid-buysell']").to_a[0..1].map{|t| t.text.strip.split(/\n/).map{|x| x.strip}}
+	doc = Nokogiri::HTML(open(url)).
+		css("div[class='au-mid-buysell']").to_a[0..1].map{|t| t.text.strip.split(/\n/).
+			map{|x| x.strip}}.map{|r| [r[0], r[1].gsub(/[^\d,]/, '').gsub(',', '.')]}
 end
 
 url_usd = "http://minfin.com.ua/currency/auction/usd/buy/all/?sort=time&order=desc"
