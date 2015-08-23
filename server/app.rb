@@ -16,12 +16,11 @@ get '/' do
 	"Hello world"
 end
 
-get '/usd' do
+get '/get' do
 	content_type :json 
-	get_currency(url_usd).to_json
-end
+	dict = {}
+	dict['usd'] = get_currency(url_usd)
+	dict['eur'] = get_currency(url_eur)
 
-get '/eur' do 
-	content_type :json 
-	get_currency(url_eur).to_json
+	dict.to_json
 end
