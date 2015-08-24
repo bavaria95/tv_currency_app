@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget>
+    <ThumbIcon>resource/icon/1.png</ThumbIcon>
+	<BigThumbIcon>resource/icon/2.png</BigThumbIcon>
+	<ListIcon>resource/icon/3.png</ListIcon>
+	<BigListIcon>resource/icon/4.jpg</BigListIcon>
+	<previewjs></previewjs>
+	<preicon></preicon>
+	<cpname>Dima Inc</cpname>
+	<cplogo></cplogo>
+	<cpauthjs></cpauthjs>
+	<ver>1.0</ver>
+	<mgrver></mgrver>
+	<fullwidget>y</fullwidget>
+	<srcctl>y</srcctl>
+	<ticker>n</ticker>
+    <apptype>11</apptype>
+	<childlock>n</childlock>
+	<audiomute>n</audiomute>
+	<videomute>n</videomute>
+	<dcont>y</dcont>
+	<type>user</type>
+	<widgetname>Курс валют</widgetname>
+	<description>Курс валют с МинФин</description>
+	<width>960</width>
+	<height>540</height>
+	<author>
+		<name>Dima</name>
+		<email></email>
+		<link></link>
+		<organization></organization>
+	</author>
+</widget>
