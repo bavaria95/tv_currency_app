@@ -1,3 +1,3 @@
-# tv_currency_app
+# server
 
 Server for the app. Written in Ruby with Sinatra micro framework. It parses web page with Nokogiri for needed items.
